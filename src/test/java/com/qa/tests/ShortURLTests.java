@@ -3,6 +3,8 @@ package com.qa.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -13,9 +15,9 @@ public class ShortURLTests {
 
 	@BeforeMethod
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\abhib\\Desktop\\chromedriver_win32 (7)\\chromedriver.exe");
-		driver = new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver",
+				"C:/Users/abhib/Downloads/geckodriver-v0.32.0-win32/geckodriver.exe");
+		driver = new FirefoxDriver();
 	}
 
 	@Test (priority=1)
@@ -37,7 +39,18 @@ public class ShortURLTests {
 		String clicks = driver.findElement(By.cssSelector(".squarebox")).getText();
 		System.out.println(clicks);
 	}
-	
+	@Test(priority = 3)
+	public void amazonTitleTest(){
+		driver.get("https://www.amazon.ca/");
+		String titleAmazon= driver.getTitle();
+		Assert.assertEquals("Amazon.ca: Low Prices – Fast Shipping – Millions of Items",titleAmazon,"Titles Match");
+
+	}
+	@Test(priority = 4)
+	public  void navigateToPage(){
+		driver.get("https://www.amazon.ca/");
+		driver.findElement(By.xpath("//a[@id='nav-logo-sprites']")).click();
+	}
 	@AfterMethod
 	public void tearDown() {
 		driver.close();
