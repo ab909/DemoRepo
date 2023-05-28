@@ -23,16 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fea38e5e-4ab8-4eca-bd19-dd8f559157da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/tests/AlertsAndPopUps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/tests/CustomXpathConcept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/tests/DragAndDrop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/tests/Locators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/tests/ShortURLTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/tests/ShortURLTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/DemoRepo/DemoRepo/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/DemoRepo/DemoRepo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/qa/tests/ShortURLTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/qa/tests/ShortURLTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

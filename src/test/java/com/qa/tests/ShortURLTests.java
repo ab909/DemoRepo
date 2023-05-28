@@ -15,9 +15,9 @@ public class ShortURLTests {
 
 	@BeforeMethod
 	public void setUp() {
-		System.setProperty("webdriver.gecko.driver",
-				"C:/Users/abhib/Downloads/geckodriver-v0.32.0-win32/geckodriver.exe");
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver",
+				"C:/Users/abhib/Documents/chromedriver.exe");
+		driver = new ChromeDriver();
 	}
 
 	@Test (priority=1)
